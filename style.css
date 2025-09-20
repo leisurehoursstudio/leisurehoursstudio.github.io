@@ -1,1 +1,129 @@
+@font-face {
+  font-family: 'NeueHaas';
+  src: url('fonts/NeueHaasUnica-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
+@font-face {
+  font-family: 'RizomaL';
+  src: url('fonts/RizomaL-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'NeueHaas', sans-serif;
+  background: #F4764B; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  padding: 20px;
+  font-size: 16px;   
+  line-height: 1.6; 
+}
+
+.card {
+  background: #F5F5EB; 
+  border-radius: 999px;
+  border: 1px solid #000;
+  width: 900px;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.tagline {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 4rem;
+  letter-spacing: -3.5%;
+  margin: 0.5rem 0 1rem;
+  font-weight: 600;
+  line-height: 4rem;
+}
+
+h1 .alt-font {
+  font-family: 'RizomaL', serif;
+  font-weight: 400;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto 2.5rem;
+}
+
+.email-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.email-box .label {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.email-box .email {
+  display: inline-block;
+  padding: 5px 20px;
+  border: 1px solid #111;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000;
+  transition: background 0.2s ease-in-out;
+}
+
+.email-box .email:hover {
+  background: #000;
+  color: #F5F5EB;
+}
+
+@media (max-width: 600px) {
+  .card {
+    border-radius: 32px; /* less extreme rounding on small screens */
+    padding: 40px 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .tagline {
+    font-size: 0.9rem;
+  }
+
+  .description {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+  }
+
+  .email-box {
+    flex-direction: column; 
+    gap: 8px;
+  }
+
+  .email-box .label {
+    font-size: 0.85rem;
+  }
+
+  .email-box .email {
+    font-size: 0.95rem;
+    padding: 8px 16px;
+  }
+}
