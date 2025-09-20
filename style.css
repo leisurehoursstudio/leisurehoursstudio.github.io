@@ -1,6 +1,14 @@
 @font-face {
   font-family: 'NeueHaas';
-  src: url('fonts/NeueHaasUnica-Regular.woff2') format('woff2');
+  src: url('fonts/NeueHaasUnicaPro-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NeueHaasBold';
+  src: url('fonts/NeueHaasUnicaPro-Bold.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -8,7 +16,7 @@
 
 @font-face {
   font-family: 'RizomaL';
-  src: url('fonts/RizomaL-Regular.woff2') format('woff2');
+  src: url('fonts/RizomaL-Light.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
