@@ -30,7 +30,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 90vh;
   padding: 20px;
   font-size: 16px;   
   line-height: 1.6; 
@@ -102,6 +102,10 @@ h1 .alt-font {
 }
 
 @media (max-width: 600px) {
+body {
+  height: 100vh;
+}
+  
   .card {
     border-radius: 32px; /* less extreme rounding on small screens */
     padding: 40px 20px;
